@@ -1,43 +1,63 @@
+
+/*Font Family inherited*/
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Element Selector */
+
+/*Header centered with red drop shadow*/
 h1 {
     text-align: center;
     font-size: 60px ;
     filter: drop-shadow(4px 4px 1px red);
 }
 
+/*All Paragraph fonts*/
 p {
     font-size: 15px;
 }
 
+/*Text color for list*/
 ul {
     color: green;
 }
 
+/*Formating Form inputs larger, padding, and border. */
 input[type=text], input[type=tel], input[type=email] {
-    width: 25%;
-    padding: 8px 10px;
-    margin: 5px 0;
+    width: 25%; /*Text box width */
+    padding: 8px 10px; /*8 on top/bottom, 10 on left/right */
+    margin: 5px 0; /*5 on top/bottom, 0 on left/right */
     box-sizing: border-box;
 }
+
+/*Footer. Flexbox */
 footer {
     text-align: center;
-    background-color: yellow;
-    display: inline-block;
-    font-size: 25px;
+    background-color: rgb(246, 246, 164);
+    display: flex;
+    align-content: center;
+    gap: 3rem; /*Space between words*/
+    font-size: 16px;
     padding: 20px;
 }
+
 
 button {
     transition-duration: 1s;
     color: brown;
     background-color: aquamarine;
-    padding: 16px 32px;
+    padding: 16px 32px;/*space inside the button 16 on top and bottom, 32 on left and right*/
     font-size: 20px;
+    margin-left: 10px; /*space outside the button*/
 }
 
+/*Hovering over the button will turn it purple */
 button:hover {
     background-color: darkorchid;
 }
 
+/*Images on all pages have orange drop shadow and curved corners */
 img {
     margin: 20px;
     border-radius: 4rem;
@@ -46,10 +66,12 @@ img {
 
 /*Class name selectors*/
 
+/*This could also be part of the body element */
 .full-page {
     margin-left: 10px;
 }
 
+/*Border around this section is dashed and blue */
 .List-for-training {
     border-style: dashed;
     border-width: 2px;
@@ -58,10 +80,14 @@ img {
     padding-left: 5px;
 }
 
+/*ID Selector */
+
+/* Table Width is 75% of page with border and padding */
 #contacts {
     width: 75%;
 }
 
+/*Table Data and Table heading */
 #contacts th, #contacts td {
     border: 3px solid rgba(221, 221, 221, 0.996);
     padding: 5px;
@@ -75,5 +101,8 @@ img {
     color: white;
 }
 
+/*Ever other line has orange background */
 #contacts tr:nth-child(even){background-color: orange;}
+
+/*Hovering over the row will change the color */
 #contacts tr:hover {background-color: #ddd;}
