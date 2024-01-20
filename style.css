@@ -19,7 +19,7 @@ p {
 }
 
 /*Text color for list*/
-ul {
+ul, h2, h3 {
     color: green;
 }
 
